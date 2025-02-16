@@ -1,63 +1,74 @@
-🍽️ DeepDiet: AI-Powered Nutrition Guide
+# DeepDiet 🍏 AI-Powered Nutrition Guide
 
-DeepDiet is an AI-driven meal planning and nutrition analysis tool that helps users generate personalized diet plans based on their dietary goals and uploaded meal images. It leverages state-of-the-art AI models for food recognition and meal planning.
-🚀 Features
+An AI-powered web app that provides personalized meal plans and nutrition insights using deep learning and food image recognition.
 
-    🥗 AI-Powered Meal Planning – Generates personalized meal plans using DeepSeek-R1.
-    📸 Food Recognition – Uses a YOLOv10 model to analyze uploaded meal images.
-    🔬 Nutritional Analysis – Fetches nutrition facts from the USDA API.
-    📝 Goal-Based Customization – Users can input dietary preferences (e.g., high-protein, low-carb).
-    🏋️ Health Optimization – Suggests portion sizes and balanced meals.
+## 🚀 Features
 
-🛠️ Tech Stack
+- 🥗 AI-generated meal plans based on dietary goals.
+- 📸 Image-based food recognition using YOLOv10.
+- 🍽️ Fetches nutritional facts from the USDA API.
+- 🧠 Uses DeepSeek-R1 for intelligent meal planning.
 
-    Frontend: Streamlit
-    AI Models: DeepSeek-R1 (Meal Plan Generation), YOLOv10 (Food Recognition)
-    APIs: USDA Food Data API
-    Backend Processing: OpenAI API, NumPy, OpenCV, Requests
+## 🛠️ Tech Stack
 
-🚀 Installation & Setup
-1️⃣ Clone the Repository
+- **Frontend**: Streamlit
+- **AI Models**: DeepSeek-R1, YOLOv10
+- **Data Processing**: OpenAI API, USDA API
+- **Backend**: Python, OpenAI SDK
 
+## 📦 Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```
 git clone https://github.com/your-username/DeepDiet.git
 cd DeepDiet
+```
 
-2️⃣ Set Up Virtual Environment
+### 2️⃣ Create a Virtual Environment
 
-pip install virtualenv
-virtualenv venv
-source venv/bin/activate  # For Linux/macOS
-venv\Scripts\activate     # For Windows
+#### Windows:
+```
+python -m venv venv
+venv\Scripts\activate
+```
 
-3️⃣ Install Dependencies
+#### macOS/Linux:
+```
+python3 -m venv venv
+source venv/bin/activate
+```
 
+### 3️⃣ Install Dependencies
+
+```
 pip install -r requirements.txt
+```
 
-4️⃣ Set Up API Keys
+### 4️⃣ Set Up API Keys
 
-Create a .streamlit folder and add a file secrets.toml with the following content:
+Create a `.streamlit/secrets.toml` file and add:
 
-AIMLAPI_KEY="YOUR_AIMLAPI_KEY"
-USDA_API_KEY="YOUR_USDA_API_KEY"
+```
+AIMLAPI_KEY = "your_aimlapi_key"
+USDA_API_KEY = "your_usda_api_key"
+```
 
-Replace YOUR_AIMLAPI_KEY and YOUR_USDA_API_KEY with your actual API keys.
-▶️ Running the App
+### 5️⃣ Run the Application
 
+```
 streamlit run app.py
+```
 
-Open your browser and go to http://localhost:8501 to use the app.
-🚀 Deployment on Streamlit Cloud
+Open your browser and go to [http://localhost:8501](http://localhost:8501).
 
-    Push this project to GitHub.
-    Go to Streamlit Cloud and create a new app.
-    Select your repository and deploy.
-    Add API keys in Streamlit Secrets.
+## 🚀 Deployment on Streamlit Cloud
 
-🤝 Contributing
+1. Push your project to GitHub.
+2. Go to **Streamlit Cloud** and create a new app.
+3. Select your repository and deploy.
+4. Add API keys in **Streamlit Secrets**.
 
-Want to improve DeepDiet? Feel free to fork the repo and submit a pull request!
-📜 License
+## 🤝 Contributing
 
-This project is open-source and available under the MIT License.
-
-Let me know if you'd like any changes! 🚀
+Want to improve DeepDiet? Fork the repo and submit a PR! 💡
