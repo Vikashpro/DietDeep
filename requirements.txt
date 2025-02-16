@@ -1,0 +1,12 @@
+streamlit
+requests
+torch
+torchvision
+pillow
+openai
+ultralytics
+opencv-python-headless
+numpy
+tqdm
+certifi
+jsonschema
